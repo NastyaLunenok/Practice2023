@@ -9,7 +9,7 @@ while not (fl):
         number = int(input())
         if number < 1 or number > 5:
             print("Данному номеру не соответствует ни один из цветов. "
-            "Введите номер ещё раз.")
+                  "Введите номер ещё раз.")
         else:
             flag = True
     if number == program_number:

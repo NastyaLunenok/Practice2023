@@ -9,7 +9,7 @@ def add_books():
         author = input("Введите автора книги: ")
         year = input("Введите год издания книги: ")
         added_books.append([book, author, year])
-        
+
     with open("books.csv", "a", newline='') as file:
         writer = csv.writer(file, delimiter=";")
         writer.writerows(added_books)
@@ -24,19 +24,21 @@ def book_search():
         for row in reader:
             if row["Автор"] == author:
                 found_books.append(row)
-                
+      
     if not found_books:
         print("В списке нет книг данного автора\n")
     else:
         for row in found_books:
-            print(row["Книга"], "|", row["Автор"], "|", row["Год выпуска"], "\n")
+            print(row["Книга"], "|",
+                  row["Автор"], "|",
+                  row["Год выпуска"], "\n")
 
 
 while True:
     menu = int(input("Выберите номер опреации:\n"
-                       "1. Добавить новые книги\n"
-                       "2. Найти книги по автору\n"
-                       "3. Выйти\n"))
+                     "1. Добавить новые книги\n"
+                     "2. Найти книги по автору\n"
+                     "3. Выйти\n"))
     if menu == 1:
         add_books()
     elif menu == 2:

@@ -12,4 +12,4 @@ for i in range(len(string)):
             dic[string[i]] = False
         if string[i] in vowels:
             dic[string[i]] = True
-print(dic) 
+print(dic)

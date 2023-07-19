@@ -1,3 +1,3 @@
 print("Введите строку:")
-string=input()
+string = input()
 print("Регистр букв изменен:", string.swapcase())

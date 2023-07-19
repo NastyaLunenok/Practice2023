@@ -1,3 +1,3 @@
 print("Введите своё имя")
-name=input()
+name = input()
 print("Длина имени:", len(name), "букв")

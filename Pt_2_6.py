@@ -1,10 +1,10 @@
 print("Сколько километров хотите проехать на автомобиле?")
-km=int(input())
+km = int(input())
 print("Сколько литров топлива расходует автомобиль на 100 километров?")
-flow=int(input())
+flow = int(input())
 print("Сколько литров топлива в вашем баке?")
-liters=int(input())
-if ((flow/100)*km)<=liters:
+liters = int(input())
+if ((flow / 100) * km) <= liters:
     print("Вы проедете желаемое расстояние")
 else:
     print("Вы не проедете желаемое расстояние")

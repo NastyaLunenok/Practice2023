@@ -3,13 +3,15 @@ def search(s, low, high, palindromes):
         palindromes.add(s[low: high + 1])
         low = low - 1
         high = high + 1
- 
+
+
 def PalindromicSubstrings(s):
     palindromes = set()
     for i in range(len(s)):
-        search(s, i, i, palindromes) #поиск палиндромов нечетной длины
-        search(s, i, i + 1, palindromes) #поиск палиндромов четной длины
+        search(s, i, i, palindromes)
+        search(s, i, i + 1, palindromes)
     print(palindromes, end='')
+
 
 s = input("Введите строку: ")
 PalindromicSubstrings(s)

@@ -1,3 +1,3 @@
 print("Введите строку")
-string=input()
+string = input()
 print("Все слова начинаются с заглавных букв:", string.title())

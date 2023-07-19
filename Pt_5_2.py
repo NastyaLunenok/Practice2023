@@ -24,7 +24,7 @@ def book_search():
         for row in reader:
             if row["Автор"] == author:
                 found_books.append(row)
-      
+
     if not found_books:
         print("В списке нет книг данного автора\n")
     else:

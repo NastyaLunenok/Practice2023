@@ -14,6 +14,7 @@ def find_ways(graph, start, end, way):
 
     return ways
 
+
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
@@ -25,6 +26,5 @@ graph = {
 start = 'A'
 end = 'F'
 path = []
-
 paths = find_ways(graph, start, end, path)
 print(*paths)

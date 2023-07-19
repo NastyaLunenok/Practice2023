@@ -10,4 +10,3 @@ books = [("Книга", "Автор", "Год выпуска"),
 with open("books.csv", "w", newline='') as file:
     writer = csv.writer(file, delimiter=";")
     writer.writerows(books)
-    

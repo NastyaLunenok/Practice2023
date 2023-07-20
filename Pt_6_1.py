@@ -32,7 +32,7 @@ def getTopTracks(link):
         return
     try:
         response = requests.get(link)
-  
+
     except requests.exceptions.RequestException as e:
         logger.error(e)
         return

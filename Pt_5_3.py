@@ -21,7 +21,7 @@ def search_books(from_year, to_year):
                 year = str(year)
                 if year == row["Год выпуска"]:
                     books.append(row)
-      
+
     if not books:
         print("В списке нет книг этих лет")
     else:
@@ -33,9 +33,7 @@ fl = True
 while fl:
     start_year = input("Введите нижнюю границу диапазона годов: ")
     end_year = input("Введите верхнюю границу диапазона годов: ")
-    if (not is_valid_year(start_year) or
-        not is_valid_year(end_year) or
-        start_year > end_year):
+    if (not is_valid_year(start_year) or not is_valid_year(end_year) or start_year > end_year):
         print("Некорректный ввод годов. Введите еще раз.")
     else:
         search_books(int(start_year), int(end_year))

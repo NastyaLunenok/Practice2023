@@ -8,7 +8,6 @@ class TagSpider(scrapy.Spider):
     start_urls = [url % page]
     games_count = 0
 
-
     def parse(self, response):
         for link in response.css('#search_resultsRows a::attr(href)'):
             yield response.follow(link, callback=self.parse_tags)
